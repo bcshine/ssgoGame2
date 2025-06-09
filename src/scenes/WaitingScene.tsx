@@ -9,11 +9,15 @@ const SceneContainer = styled(motion.div)`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 40px 30px;
+  padding: 30px 25px;
   text-align: center;
   background: white;
   color: #333;
   box-sizing: border-box;
+  
+  @media (max-width: 768px) {
+    padding: 20px 20px;
+  }
 `;
 
 const Title = styled(motion.h1)`

@@ -10,24 +10,32 @@ import CompleteScene from './scenes/CompleteScene';
 
 const AppContainer = styled.div`
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 2vh 0;
+  box-sizing: border-box;
 `;
 
 const GameContainer = styled(motion.div)`
   width: 100%;
   max-width: 500px;
-  height: 100%;
-  max-height: 833px;
+  height: 90vh;
+  max-height: 750px;
   aspect-ratio: 3/5;
   background: white;
   border-radius: 20px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   position: relative;
+  
+  @media (max-width: 768px) {
+    height: 85vh;
+    max-height: 700px;
+    margin: 0 10px;
+  }
 `;
 
 function App() {

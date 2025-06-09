@@ -10,17 +10,26 @@ const SceneContainer = styled(motion.div)`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 40px 30px;
+  padding: 30px 25px;
   background: white;
   box-sizing: border-box;
+  
+  @media (max-width: 768px) {
+    padding: 20px 20px;
+  }
 `;
 
 const Title = styled(motion.h2)`
   font-size: 2rem;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   color: #333;
   text-align: center;
   font-weight: bold;
+  
+  @media (max-width: 768px) {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+  }
 `;
 
 const BoxesContainer = styled.div`
