@@ -86,11 +86,16 @@ const WaitingScene: React.FC<WaitingSceneProps> = ({ onStart }) => {
         산간고 반찬가게 쿠폰 게임
       </GameTitle>
       <Logo
-        src="/ssgologo.jpg"
+        src={`${process.env.PUBLIC_URL}/ssgologo.jpg`}
         alt="산간고 로고"
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{ duration: 0.8, type: "spring" }}
+        onError={(e) => {
+          console.log('로고 이미지 로드 실패');
+          // 로고 로드 실패 시 숨김
+          e.currentTarget.style.display = 'none';
+        }}
       />
       <Title
         initial={{ y: -20 }}
