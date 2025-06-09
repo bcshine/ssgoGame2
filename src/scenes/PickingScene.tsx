@@ -140,9 +140,10 @@ const PickingScene: React.FC<PickingSceneProps> = ({ onBoxSelect }) => {
             }}
           >
             <BoxImage 
-              src={`/images/q${box.id}.png`} 
+              src={`${process.env.PUBLIC_URL}/images/q${box.id}.png`} 
               alt={`반찬 상자 ${box.id}`}
               onError={(e) => {
+                console.log(`이미지 로드 실패: q${box.id}.png`);
                 // 이미지 로드 실패 시 기본 이미지로 대체
                 e.currentTarget.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjZjhmOWZhIi8+CjxwYXRoIGQ9Im0zMCA0MCA0MCAyMCAwLTQwLTQwLTIweiIgZmlsbD0iI2RlZTJlNiIvPgo8cGF0aCBkPSJNNTAgMzBWNzBNMzAgNTBINzAiIHN0cm9rZT0iI2FkYjViZCIgc3Ryb2tlLXdpZHRoPSIyIi8+CjwvdXJnPg==';
               }}
