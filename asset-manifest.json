@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/ssgoGame2/static/js/main.02ffd991.js",
+    "main.js": "/ssgoGame2/static/js/main.b5b52b3b.js",
     "index.html": "/ssgoGame2/index.html",
-    "main.02ffd991.js.map": "/ssgoGame2/static/js/main.02ffd991.js.map"
+    "main.b5b52b3b.js.map": "/ssgoGame2/static/js/main.b5b52b3b.js.map"
   },
   "entrypoints": [
-    "static/js/main.02ffd991.js"
+    "static/js/main.b5b52b3b.js"
   ]
 }
